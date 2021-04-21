@@ -20,6 +20,8 @@ public interface MallUserTokenMapper {
 
     int updateByPrimaryKey(MallUserToken record);
 
+    MallUserToken selectByToken(String token);
+
 }
 
 
