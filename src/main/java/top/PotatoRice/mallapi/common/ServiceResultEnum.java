@@ -2,7 +2,7 @@ package top.PotatoRice.mallapi.common;
 
 /**
  * @author PotatoRice
- * @description：
+ * @description： 业务结果枚举
  * @date 2021/4/20 4:47 下午
  */
 public enum ServiceResultEnum {

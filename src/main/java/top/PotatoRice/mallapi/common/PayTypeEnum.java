@@ -2,7 +2,7 @@ package top.PotatoRice.mallapi.common;
 
 /**
  * @author PotatoRice
- * @description：
+ * @description： 支付类型枚举:0.无 1.支付宝 2.微信支付
  * @date 2021/4/20 4:46 下午
  */
 public enum PayTypeEnum {

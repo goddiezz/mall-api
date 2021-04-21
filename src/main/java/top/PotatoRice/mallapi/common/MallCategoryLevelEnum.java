@@ -4,7 +4,7 @@ import java.security.PublicKey;
 
 /**
  * @author PotatoRice
- * @description：分类级别枚举
+ * @description： 分类级别枚举
  * @date
  */
 public enum MallCategoryLevelEnum {

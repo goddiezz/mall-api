@@ -2,7 +2,7 @@ package top.PotatoRice.mallapi.common;
 
 /**
  * @author PotatoRice
- * @description：支付状态枚举 0支付中 1支付成功 -1支付失败
+ * @description： 支付状态枚举 0支付中 1支付成功 -1支付失败
  * @date 2021/4/20 11:34 上午
  */
 public enum PayStatusEnum {

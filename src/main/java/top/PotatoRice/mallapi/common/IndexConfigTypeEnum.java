@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * @author PotatoRice
- * @description：首页配置项枚举 1搜索框热搜 2搜索下拉框热搜 3首页热销商品 4首页新品上线 5首页为你推荐
+ * @description： 首页配置项枚举 1搜索框热搜 2搜索下拉框热搜 3首页热销商品 4首页新品上线 5首页为你推荐
  * @date 2021/4/20 11:14 上午
  */
 public enum IndexConfigTypeEnum {

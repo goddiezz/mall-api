@@ -2,13 +2,13 @@ package top.PotatoRice.mallapi.common;
 
 /**
  * @author PotatoRice
- * @description：常量类
+ * @description： 常量类
  * @date 2021/4/20 10:42 上午
  */
 public class Constants {
     /**
      * 上传文件的默认url前缀，根据自己情况修改，
-     * 这里是mac和linux写法，切记upload后面要加/
+     * 这里是mac和linux写法，切记upload后面要加\\
      * windows写法是："D：\\upload\\"
      */
     public final static String FILE_UPLOAD_DIC = "/Users/loorzve/upload";

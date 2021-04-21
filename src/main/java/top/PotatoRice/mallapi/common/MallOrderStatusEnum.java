@@ -2,7 +2,7 @@ package top.PotatoRice.mallapi.common;
 
 /**
  * @author PotatoRice
- * @description：
+ * @description： 订单状态: 0.待支付 1.已支付 2.配货完成 3:出库成功 4.交易成功 -1.手动关闭 -2.超时关闭 -3.商家关闭
  * @date 2021/4/20 11:25 上午
  */
 public enum MallOrderStatusEnum {

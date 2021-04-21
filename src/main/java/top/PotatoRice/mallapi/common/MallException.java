@@ -2,7 +2,7 @@ package top.PotatoRice.mallapi.common;
 
 /**
  * @author PotatoRice
- * @description：
+ * @description： 自定义异常
  * @date 2021/4/20 4:40 下午
  */
 public class MallException extends RuntimeException{
