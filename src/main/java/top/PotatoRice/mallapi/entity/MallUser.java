@@ -2,13 +2,21 @@ package top.PotatoRice.mallapi.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 
+ * @author loorzve
  * @TableName tb_mall_user
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class MallUser implements Serializable {
     /**
      * 用户主键id

@@ -1,5 +1,6 @@
 package top.PotatoRice.mallapi.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import top.PotatoRice.mallapi.entity.MallUser;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public interface MallUserMapper {
 
     /**
      * 主键删除
+     *
      * @param id
      * @return
      */
@@ -19,6 +21,7 @@ public interface MallUserMapper {
 
     /**
      * 添加
+     *
      * @param record
      * @return
      */
@@ -26,6 +29,7 @@ public interface MallUserMapper {
 
     /**
      * 自定义添加
+     *
      * @param record
      * @return
      */
@@ -33,6 +37,7 @@ public interface MallUserMapper {
 
     /**
      * 主键查找
+     *
      * @param id
      * @return
      */
@@ -40,6 +45,7 @@ public interface MallUserMapper {
 
     /**
      * 自定义主键更新
+     *
      * @param record
      * @return
      */
@@ -47,6 +53,7 @@ public interface MallUserMapper {
 
     /**
      * 主键更新
+     *
      * @param record
      * @return
      */
@@ -54,10 +61,26 @@ public interface MallUserMapper {
 
     /**
      * 查找全部
+     *
      * @param
      * @return
      */
     List<MallUser> selectAll();
+
+    /**
+     * 根据登录名查询用户
+     * @param loginName 登录名
+     * @return 用户对象
+     */
+    MallUser selectByLoginName(String loginName);
+
+    /**
+     * 根据登录名和密码查询用户
+     * @param loginName 登录名
+     * @param password 密码
+     * @return 用户对象
+     */
+    MallUser selectByLoginNameAndPasswd(@Param("loginName") String loginName, @Param("password") String password);
 
 }
 
