@@ -36,7 +36,7 @@ public class Swagger2Config {
         swaggerParams.add(tokenParam.build());
         return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).ignoredParameterTypes(MallUser.class).select()
                 // 修改为自己的 controller 包路径
-                .apis(RequestHandlerSelectors.basePackage("com.mall.api")).paths(PathSelectors.any()).build().globalOperationParameters(swaggerParams);
+                .apis(RequestHandlerSelectors.basePackage("top.PotatoRice.mallapi")).paths(PathSelectors.any()).build().globalOperationParameters(swaggerParams);
     }
 
     private ApiInfo apiInfo() {
