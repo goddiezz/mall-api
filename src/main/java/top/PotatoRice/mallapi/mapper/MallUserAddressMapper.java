@@ -1,64 +1,36 @@
 package top.PotatoRice.mallapi.mapper;
 
-import top.PotatoRice.mallapi.entity.MallUser;
 import top.PotatoRice.mallapi.entity.MallUserAddress;
+
+import java.util.List;
 
 /**
  * @author loorzve
  * @Entity top.PotatoRice.mallapi.entity.MallUserAddress
  */
 public interface MallUserAddressMapper {
-
-    /**
-     * 主键删除
-     *
-     * @param id
-     * @return
-     */
     int deleteByPrimaryKey(Long id);
 
-    /**
-     * 添加
-     *
-     * @param record
-     * @return
-     */
     int insert(MallUserAddress record);
 
-    /**
-     * 自定义添加
-     *
-     * @param record
-     * @return
-     */
     int insertSelective(MallUserAddress record);
 
-    /**
-     * 主键查找
-     *
-     * @param id
-     * @return
-     */
     MallUserAddress selectByPrimaryKey(Long id);
 
-    /**
-     * 自定义主键更新
-     *
-     * @param record
-     * @return
-     */
     int updateByPrimaryKeySelective(MallUserAddress record);
 
-    /**
-     * 主键更新
-     *
-     * @param record
-     * @return
-     */
     int updateByPrimaryKey(MallUserAddress record);
 
-}
+    /**
+     * 根据用户id获取默认收货地址     *     * @param userId 用户id     * @return 默认收货地址
+     */
+    MallUserAddress getMyDefaultAddress(Long userId);
 
+    /**
+     * 根据用户id获取用户的收货地址列表     *     * @param userId 用户id     * @return 收货地址列表
+     */
+    List<MallUserAddress> findMyAddressList(Long userId);
+}
 
 
 
