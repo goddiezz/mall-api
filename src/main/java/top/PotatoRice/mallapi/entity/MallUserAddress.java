@@ -3,6 +3,8 @@ package top.PotatoRice.mallapi.entity;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,10 +19,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@TableName("tb_mall_user_address")
 public class MallUserAddress implements Serializable {
     /**
      * 
      */
+    @TableId
     private Long addressId;
 
     /**

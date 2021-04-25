@@ -3,47 +3,71 @@ package top.PotatoRice.mallapi.service.impl;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import top.PotatoRice.mallapi.controller.param.MallUserUpdateParam;
-import top.PotatoRice.mallapi.service.MallUserService;
+import top.PotatoRice.mallapi.service.MallUserAddressService;
 
 import javax.annotation.Resource;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
 @Slf4j
-class MallUserServiceTest {
+class MallUserAddressServiceTest {
     @Resource
-    private MallUserService mallUserService;
+    private MallUserAddressService mallUserAddressService;
 
     @Test
-    void register() {
-        String register = mallUserService.register("1777233211", "1231223133213");
-        log.info(register);
-        assertEquals("success", register);
+    void getMyAddresses() {
+        //    List<MallUserAddressVO> myAddresses = mallUserAddressService.getMyAddresses(1L);
+        //    log.info(String.valueOf(myAddresses));
     }
 
     @Test
-    void login() {
-        String login = mallUserService.login("13300001111", "e10adc3949ba59abbe56e057f20f883e");        //返回了登录用户的token，会在tb_mall_user_token表生成一条token记录
-        log.info(login);
+    void saveUserAddress() {
+        //MallUserAddress mallUserAddress = MallUserAddress.builder()
+        //        .userId(1L)
+        //        .provinceName("江苏省")
+        //        .cityName("南京市")
+        //        .regionName("栖霞区")
+        //        .detailAddress("羊山北路1号")
+        //        .userName("taoranran")
+        //        .userPhone("13951905171")
+        //        .defaultFlag((byte) 0)
+        //        .isDeleted((byte) 0)
+        //        .createTime(new Date())
+        //        .updateTime(new Date())
+        //        .build();
+        //Boolean flag = mallUserAddressService.saveUserAddress(mallUserAddress);
+        //assertEquals(true, flag);
     }
 
     @Test
-    void updateUserInfo() {        //修改10号用户信息,可修改的字段为MallUserUpdateParam的属性
-        MallUserUpdateParam mup = new MallUserUpdateParam();
-        mup.setNickName("银翼杀手");
-        mup.setPasswordMd5("e10adc3949ba59abbe56e057f20f883e");
-        mup.setIntroduceSign("仿生人也会梦到电子羊吗");
-        Boolean result = mallUserService.updateUserInfo(mup, 2L);
-        log.info(result.toString());
-        assertTrue(result);
+    void updateMallUserAddress() {
+        //MallUserAddress mallUserAddress = MallUserAddress.builder()
+        //        .addressId(1385789992713883649L)
+        //        .userId(1L)
+        //        .userName("test")
+        //        .userPhone("13322221111")
+        //        .defaultFlag((byte) 0)
+        //        .updateTime(new Date())
+        //        .build();
+        //Boolean flag = mallUserAddressService.updateMallUserAddress(mallUserAddress);
+        //log.info(String.valueOf(flag));
+        //assertTrue(flag);
     }
 
     @Test
-    void logout() {        //会在tb_mall_user_token表中删掉10号用户的一条token数据
-        Boolean logout = mallUserService.logout(2L);
-        log.info(logout.toString());
-        assertTrue(logout);
+    void getMallUserAddressById() {
+        //MallUserAddress address = mallUserAddressService.getMallUserAddressById(1L);
+        //log.info(String.valueOf(address));
+    }
+
+    @Test
+    void getMyDefaultAddressByUserId() {
+        //MallUserAddress defaultAddress = mallUserAddressService.getMyDefaultAddressByUserId(1L);
+        //log.info(String.valueOf(defaultAddress));
+    }
+
+    @Test
+    void deleteById() {
+        //Boolean flag = mallUserAddressService.deleteById(1385789992713883649L);
+        //log.info(String.valueOf(flag));
     }
 }

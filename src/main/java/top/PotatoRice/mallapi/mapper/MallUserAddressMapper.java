@@ -1,5 +1,6 @@
 package top.PotatoRice.mallapi.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import top.PotatoRice.mallapi.entity.MallUserAddress;
 
 import java.util.List;
@@ -8,18 +9,7 @@ import java.util.List;
  * @author loorzve
  * @Entity top.PotatoRice.mallapi.entity.MallUserAddress
  */
-public interface MallUserAddressMapper {
-    int deleteByPrimaryKey(Long id);
-
-    int insert(MallUserAddress record);
-
-    int insertSelective(MallUserAddress record);
-
-    MallUserAddress selectByPrimaryKey(Long id);
-
-    int updateByPrimaryKeySelective(MallUserAddress record);
-
-    int updateByPrimaryKey(MallUserAddress record);
+public interface MallUserAddressMapper extends BaseMapper<MallUserAddress> {
 
     /**
      * 根据用户id获取默认收货地址     *     * @param userId 用户id     * @return 默认收货地址
