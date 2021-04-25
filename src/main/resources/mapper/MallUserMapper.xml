@@ -158,4 +158,5 @@
         from tb_mall_user
         where login_name = #{loginName} and password_md5 = #{password} and is_deleted = 0
     </select>
+    <select id="selectAll" resultType="top.PotatoRice.mallapi.entity.MallUser"></select>
 </mapper>

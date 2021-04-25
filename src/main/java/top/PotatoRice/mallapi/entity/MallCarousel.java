@@ -2,20 +2,13 @@ package top.PotatoRice.mallapi.entity;
 
 import java.io.Serializable;
 import java.util.Date;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
- * @author loorzve
+ * 
  * @TableName tb_mall_carousel
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 public class MallCarousel implements Serializable {
     /**
      * 首页轮播图主键id
