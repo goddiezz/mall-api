@@ -41,7 +41,7 @@ public class Constants {
     /**
      * 首页推荐商品数量
      */
-    public final static int INDEX_GOODS_RECOMMONDL_NUMBER = 10;
+    public final static int INDEX_GOODS_RECOMMOND_NUMBER = 10;
 
     /**
      * 购物车商品最大数量（需求可改）

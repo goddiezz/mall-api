@@ -31,7 +31,7 @@ public enum IndexConfigTypeEnum {
     /**
      * 首页为你推荐
      */
-    INDEX_GOODS_RECOOMEND(5, "INDEX_GOODS_RECOOMEND");
+    INDEX_GOODS_RECOMMEND(5, "INDEX_GOODS_RECOMMEND");
 
     private int type;
 
