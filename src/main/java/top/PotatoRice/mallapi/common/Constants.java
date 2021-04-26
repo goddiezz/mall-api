@@ -11,7 +11,7 @@ public class Constants {
      * 这里是mac和linux写法，切记upload后面要加\\
      * windows写法是："D：\\upload\\"
      */
-    public final static String FILE_UPLOAD_DIC = "/Users/loorzve/upload";
+    public final static String FILE_UPLOAD_DIC = "/Users/loorzve/upload/";
 
     /**
      * 首页轮播图数量（可根据自身需求修改）
