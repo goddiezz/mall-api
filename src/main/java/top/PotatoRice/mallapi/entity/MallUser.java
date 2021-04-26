@@ -67,5 +67,10 @@ public class MallUser implements Serializable {
      */
     private Date createTime;
 
+    /**
+     * 头像
+     */
+    private String avatar;
+
     private static final long serialVersionUID = 1L;
 }
